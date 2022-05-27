@@ -1,6 +1,6 @@
 name: Update AUR Package
 description: Create a AUR release on version bump
-author: aksh1618
+author: KyleUltimate
 branding:
   color: blue
   icon: navigation-2
