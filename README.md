@@ -6,7 +6,7 @@ A simple yet powerful action to automatically update your AUR package to the ver
 
 | Input                | Required | Description                                                   |
 | -------------------- | -------- | ------------------------------------------------------------- |
-| `tag_version_prefix` | `true`   | The prefix of the version used in the tag. (`v` by default).  |
+| `version`            | `false`  | The version of the AUR package to update to, will automatically choose according to tag if not provided.|
 | `package_name`       | `true`   | The name of the AUR package to update.                        |
 | `commit_username`    | `true`   | The username to use when creating the new commit.             |
 | `commit_email`       | `true`   | The email to use when creating the new commit.                |
@@ -29,7 +29,7 @@ jobs:
       - name: Publish AUR package
         uses: aksh1618/update-aur-package@v1.0.5
         with:
-          tag_version_prefix: cli-v
+          version: 127+221
           package_name: my-awesome-package
           commit_username: "Github Action Bot"
           commit_email: github-action-bot@example.com

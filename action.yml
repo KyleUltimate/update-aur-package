@@ -5,10 +5,9 @@ branding:
   color: blue
   icon: navigation-2
 inputs:
-  tag_version_prefix:
-    description: The prefix of the version used in the tag. (`v` by default).
-    required: true
-    default: v
+  version:
+    description: An version to update to.
+    required: false
   package_name:
     description: The name of the AUR package to update.
     required: true
